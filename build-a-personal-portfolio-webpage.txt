@@ -1,0 +1,187 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanzeela's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hello, I'm Tanzeela</h1>
+    <p>A passionate Web Developer</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://github.com/Fatima-progmmer/weather-app" target="_blank">
+        <img src="https://via.placeholder.com/300x200.png?text=Weather+App" alt="Weather App">
+        <p>Weather Forecast App</p>
+      </a>
+    </div>
+    <div class="project-tile">
+      <a href="https://github.com/Fatima-progmmer/text-to-speech" target="_blank">
+        <img src="https://via.placeholder.com/300x200.png?text=Text+to+Speech" alt="Text to Speech App">
+        <p>Text to Speech Converter</p>
+      </a>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>Feel free to reach out or view my profile below.</p>
+    <a id="profile-link" href="https://github.com/Fatima-progmmer" target="_blank">Visit my GitHub</a>
+  </section>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1f2937;
+  padding: 1rem;
+  z-index: 999;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#projects {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-tile {
+  display: inline-block;
+  margin: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile img {
+  width: 100%;
+  display: block;
+}
+
+.project-tile p {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#contact {
+  padding: 80px 20px;
+  background: #1f2937;
+  color: white;
+  text-align: center;
+}
+
+#profile-link {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#profile-link:hover {
+  background: #2980b9;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+}
+
+
+** end of styles.css **
+

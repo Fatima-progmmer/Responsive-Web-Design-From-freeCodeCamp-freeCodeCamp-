@@ -1,0 +1,143 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dev Learner Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Developer Learning Survey</h1>
+    <p id="description">Help us understand how developers learn in 2025 by filling out this short survey.</p>
+    
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+      <!-- Age -->
+      <label id="number-label" for="number">Your Age</label>
+      <input type="number" id="number" name="age" placeholder="18" min="13" max="99" required>
+
+      <!-- Role -->
+      <label for="dropdown">Current Role</label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="developer">Professional Developer</option>
+        <option value="career-switcher">Career Switcher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>How do you prefer to learn?</legend>
+        <label><input type="radio" name="learning" value="videos" checked> Video Courses</label>
+        <label><input type="radio" name="learning" value="books"> Books</label>
+        <label><input type="radio" name="learning" value="interactive"> Interactive Platforms</label>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What topics are you interested in?</legend>
+        <label><input type="checkbox" name="topics" value="frontend"> Frontend</label>
+        <label><input type="checkbox" name="topics" value="backend"> Backend</label>
+        <label><input type="checkbox" name="topics" value="datascience"> Data Science</label>
+        <label><input type="checkbox" name="topics" value="ai"> AI/Machine Learning</label>
+      </fieldset>
+
+      <!-- Comments -->
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" placeholder="Tell us more about your learning journey..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit Survey</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 10px 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #00796b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+
+** end of styles.css **
+

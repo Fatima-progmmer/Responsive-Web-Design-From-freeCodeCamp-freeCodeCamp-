@@ -1,0 +1,233 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSpeaker Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blue_Speaker_Icon.svg/1024px-Blue_Speaker_Icon.svg.png" alt="SmartSpeaker Logo" />
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How it Works</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Meet SmartSpeaker Pro</h1>
+    <p>The smarter way to fill your home with sound.</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required />
+      <input id="submit" type="submit" value="Get Started" />
+    </form>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="flex-row">
+      <div class="feature">
+        <h3>Crystal Clear Audio</h3>
+        <p>Experience studio-quality sound with our custom-designed speakers.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Assistant Built-In</h3>
+        <p>Control your music, lights, and more with just your voice.</p>
+      </div>
+      <div class="feature">
+        <h3>Multi-Room Support</h3>
+        <p>Sync music across your entire home seamlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How it Works</h2>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="Product Demo" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="flex-row pricing">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>$99</p>
+        <ul>
+          <li>1 Speaker</li>
+          <li>Voice Control</li>
+          <li>Wi-Fi Enabled</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>$149</p>
+        <ul>
+          <li>2 Speakers</li>
+          <li>Stereo Mode</li>
+          <li>Assistant Support</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>$199</p>
+        <ul>
+          <li>4 Speakers</li>
+          <li>Multi-Room Sync</li>
+          <li>Smart Hub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: #eaf2f8;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+}
+
+#hero p {
+  margin: 10px 0 20px;
+}
+
+#form {
+  margin-top: 10px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  margin-right: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #2980b9;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature, .plan {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 280px;
+}
+
+.plan ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.plan li {
+  margin: 5px 0;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  #email {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
+
+
+** end of styles.css **
+
