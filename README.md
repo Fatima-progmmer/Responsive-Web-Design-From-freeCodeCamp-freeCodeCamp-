@@ -19,11 +19,11 @@ After completing all lessons, users build **five projects** to demonstrate their
 
 | Project | Description | Link |
 |--------|-------------|------|
-| ✅ Tribute Page | A tribute to a famous person with a structured layout and images. | [`/Tribute-Page`](./Tribute-Page) |
-| ✅ Survey Form | A responsive form collecting user data with different input types. | [`/Survey-Form`](./Survey-Form) |
-| ✅ Product Landing Page | A landing page for a product including media, navbar, and layout. | [`/Product-Landing-Page`](./Product-Landing-Page) |
-| ✅ Technical Documentation Page | A documentation-style layout using sidebar and content section. | [`/Technical-Documentation-Page`](./Technical-Documentation-Page) |
-| ✅ Personal Portfolio Page | A portfolio site showcasing projects and contact links. | [`/Personal-Portfolio`](./Personal-Portfolio) |
+| ✅ Tribute Page | A tribute to a famous person with a structured layout and images. | Tribute-Page |
+| ✅ Survey Form | A responsive form collecting user data with different input types. | Survey-Form |
+| ✅ Product Landing Page | A landing page for a product including media, navbar, and layout.| Product-Landing-Page |
+| ✅ Technical Documentation Page | A documentation-style layout using sidebar and content section. | Technical-Documentation-Page |
+| ✅ Personal Portfolio Page | A portfolio site showcasing projects and contact links. | Personal-Portfolio |
 
 ## 🚀 How to Run Locally
 
