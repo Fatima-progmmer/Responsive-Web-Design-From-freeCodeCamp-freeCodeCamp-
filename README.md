@@ -25,12 +25,12 @@ After completing all lessons, users build **five projects** to demonstrate their
 | ✅ Technical Documentation Page | A documentation-style layout using sidebar and content section. | Technical-Documentation-Page |
 | ✅ Personal Portfolio Page | A portfolio site showcasing projects and contact links. | Personal-Portfolio |
 
-## 🚀 How to Run Locally
+##🚀 How to Run Locally
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Fatima-progmmer/Responsive-Web-Design-From-freeCodeCamp-freeCodeCamp-.git
-````
+   ````
 
 2. Navigate into any project folder.
 3. Open the `index.html` file in your browser.
